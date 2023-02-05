@@ -1,0 +1,22 @@
+{
+  "name": "js-text-chart",
+  "version": "1.0.0",
+  "description": "a js tool to help you print charts at console",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel-build": "babel lib/evanicode.js -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "not sure"
+  },
+  "author": "evanpatchouli",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2"
+  }
+}
