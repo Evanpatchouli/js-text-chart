@@ -8,6 +8,9 @@ js-text-chart is a tool to transform a string of a text into a string of the cha
 support capital and small letters and natural numbers.
 Besides, only blank and "-" are allowed, others will be treated as blank.
 
+## Code Resource
+https://github.com/Evanpatchouli/js-text-chart
+
 ## Install
 
 ```shell
@@ -26,6 +29,8 @@ let chart = exchart.convert(str, mode[0]);
 console.log(chart);
 
 ```
+
+The function **convert** returns you with the chart string, and it takes two params: the first one **str** is must, and the **mode** is not must, you can assign it to "close", "far" or anyelse which will all be treated as default.
 
 ### Output
 

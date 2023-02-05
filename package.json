@@ -2,6 +2,11 @@
   "name": "js-text-chart",
   "version": "1.0.0",
   "description": "a js tool to help you print charts at console",
+  "keywords": [
+    "ascii",
+    "node.js",
+    "javascript"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,9 +14,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "not sure"
+    "url": "https://github.com/Evanpatchouli/js-text-chart"
   },
-  "author": "evanpatchouli",
+  "homepage": "https://github.com/Evanpatchouli/js-text-chart#readme",
+  "author": {
+    "name": "evanpatchouli",
+    "email": "3125019716@qq.com"
+  },
+  "bugs": {
+    "url": "https://github.com/Evanpatchouli/js-text-chart/issues",
+    "email": "3125019716@qq.com"
+  },
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
