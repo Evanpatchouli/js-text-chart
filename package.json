@@ -1,16 +1,27 @@
 {
   "name": "js-text-chart",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a js tool to help you print charts at console",
   "keywords": [
     "ascii",
     "node.js",
     "javascript"
   ],
-  "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/js.text.chart.cjs",
+  "module": "./dist/js.text.chart.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    "default": "./dist/js.text.chart.cjs",
+    "require": "./dist/js.text.chart.cjs",
+    "import": "./dist/js.text.chart.mjs"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "babel-build": "babel lib/evanicode.js -d dist"
+    "babel:build": "babel dist/js.text.chart.cjs -o dist/js.text.chart.lowjs",
+    "tsc:build": "npx tsc --outDir dist"
   },
   "repository": {
     "type": "git",
@@ -28,8 +39,10 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "@types/node": "^16.17.1",
     "@babel/cli": "^7.20.7",
     "@babel/core": "^7.20.12",
-    "@babel/preset-env": "^7.20.2"
+    "@babel/preset-env": "^7.20.2",
+    "typescript": "^4.9.5"
   }
 }
