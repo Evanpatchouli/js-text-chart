@@ -2,7 +2,10 @@
 
 js-text-chart is a tool to transform a string of a text into a string of the chart of the text.
 
-## Latest Version: 1.0.2
+## Latest Version: 1.0.4
+
+**v1.0.4**:
+Fix 1.0.3, 1.0.3 is must usable.
 
 **v1.0.2**:
 Refactored by TypeScript, support commonJs require and esmodule import.
