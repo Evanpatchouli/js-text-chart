@@ -1,6 +1,6 @@
 {
   "name": "js-text-chart",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a js tool to help you print charts at console",
   "keywords": [
     "ascii",
@@ -10,9 +10,9 @@
   "files": [
     "dist"
   ],
+  "typings": "./dist/js.text.chart.d.ts",
   "main": "./dist/js.text.chart.cjs",
   "module": "./dist/js.text.chart.mjs",
-  "types": "./index.d.ts",
   "exports": {
     "default": "./dist/js.text.chart.cjs",
     "require": "./dist/js.text.chart.cjs",
