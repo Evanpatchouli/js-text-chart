@@ -70,4 +70,4 @@ var JsTextChart = /*#__PURE__*/function () {
   }]);
   return JsTextChart;
 }();
-module.exports = new JsTextChart();
+module.exports,exports.default = new JsTextChart();

@@ -893,4 +893,4 @@ class JsTextChart {
     }
 }
 
-module.exports = new JsTextChart();
+module.exports,exports.default = new JsTextChart();
