@@ -2,16 +2,11 @@
 
 js-text-chart is a tool to transform a string of a text into a string of the chart of the text.
 
-## Latest Version: 1.0.6
+## Latest Version: 1.0.9
+Completely fix the import-requrie bug, v1.0.9 is strongly recommended. Besides, evchart and exchart are deprecated, and will be removed since v1.1.0.
 
-**v1.0.6**:
-Fix 1.0.5, v1.0.4 has a bug while required.
-
-**v1.0.5**:
-Fix 1.0.4, v1.0.4 has a bug while imported.
-
-**v1.0.4**:
-Fix 1.0.3, 1.0.3 is must usable.
+**v1.0.8 ~ v1.0.3:**
+Bug comes while being imported and required.
 
 **v1.0.2**:
 Refactored by TypeScript, support commonJs require and esmodule import.

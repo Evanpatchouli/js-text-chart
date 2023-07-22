@@ -1,6 +1,8 @@
+"use strict";
 // 打印页面相关信息（代码更新时间）
 // let date = new Date()
 // console.log(`Now Time : ${date} `);
+Object.defineProperty(exports, "__esModule", { value: true });
 let blank15 = '               ';
 let blank12 = '            ';
 let blank11 = '           ';
@@ -848,46 +850,46 @@ lCharts = new Map([
 ]);
 class JsTextChart {
     constructor() {
-        this.name = 'JsTextChart';
-        this.info = "this is a Object tool to get text chart of a string";
-    }
-    toString() {
-        console.log("Evanicode: [\n"
-            + " name: " + this.name + ",\n"
-            + " info: " + this.info + ",\n"
-            + " convert(str,mode): " + "Put into a string and you will get the text chart of it, if you don't put any params, you will get an empty string, the 'mode' has three choice: ('close','far',.etc), if you don't put into mode, the mode will be default as .etc" + "\n]");
-    }
-    convert(str, mode) {
-        if (str == undefined || str == "" || str == null) {
-            return "";
-        }
-        let strs = str.split('');
-        let textchart = '';
-        for (let i = 0; i < 8; i++) {
-            for (let j = 0; j < strs.length; j++) {
-                let strtmp = '';
-                if (!lCharts.has(strs[j])) {
-                    strtmp = lCharts.get(" ")[i].valueOf();
+        this.toString = () => {
+            console.log("Evanicode: [\n"
+                + " name: " + this.name + ",\n"
+                + " info: " + this.info + ",\n"
+                + " convert(str,mode): " + "Put into a string and you will get the text chart of it, if you don't put any params, you will get an empty string, the 'mode' has three choice: ('close','far',.etc), if you don't put into mode, the mode will be default as .etc" + "\n]");
+        };
+        this.convert = (str, mode) => {
+            if (str == undefined || str == "" || str == null) {
+                return "";
+            }
+            let strs = str.split('');
+            let textchart = '';
+            for (let i = 0; i < 8; i++) {
+                for (let j = 0; j < strs.length; j++) {
+                    let strtmp = '';
+                    if (!lCharts.has(strs[j])) {
+                        strtmp = lCharts.get(" ")[i].valueOf();
+                    }
+                    else {
+                        strtmp = lCharts.get(strs[j])[i].valueOf();
+                    }
+                    if (mode == 'close') {
+                        strtmp = strtmp.replace(' ', '');
+                    }
+                    else if (mode == 'far') {
+                        strtmp = strtmp.replace(' ', '  ');
+                    }
+                    textchart = textchart + strtmp;
+                    if (strs.length == j + 1) {
+                        textchart = textchart + '\n';
+                    }
                 }
-                else {
-                    strtmp = lCharts.get(strs[j])[i].valueOf();
-                }
-                if (mode == 'close') {
-                    strtmp = strtmp.replace(' ', '');
-                }
-                else if (mode == 'far') {
-                    strtmp = strtmp.replace(' ', '  ');
-                }
-                textchart = textchart + strtmp;
-                if (strs.length == j + 1) {
+                if (8 == i + 1) {
                     textchart = textchart + '\n';
                 }
             }
-            if (8 == i + 1) {
-                textchart = textchart + '\n';
-            }
-        }
-        return textchart;
+            return textchart;
+        };
+        this.name = 'JsTextChart';
+        this.info = "this is a Object tool to get text chart of a string";
     }
 }
-export default new JsTextChart();
+exports.default = JsTextChart;
